@@ -58,7 +58,7 @@ public class Sorting {
         }
         return books;
          }
-         //sort use by name
+         //sort users by name
         public ArrayList<Reader> sortUsersByName(ArrayList<Reader> reader) {
 
         for (int i = 0; i < reader.size(); i++) {

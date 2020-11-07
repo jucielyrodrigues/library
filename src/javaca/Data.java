@@ -94,7 +94,7 @@ public class Data {
         writeBorrow.write(borrows[0] + "," + borrows[1]+","+ borrows[2]+"\n");
         writeBorrow.close();
         }catch(IOException e){
-            System.out.println("An error has ocurred");
+            System.out.println("ERROR");
             e.printStackTrace();
         }
         

@@ -119,7 +119,7 @@ public class Main {
                        System.out.println("Type the name of the book:");
                        String book= sc.nextLine();
                             
-                       DateTimeFormatter dt = DateTimeFormatter.ofPattern("dd/mm/yyyy hh:mm:ss");
+                       DateTimeFormatter dt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
                        LocalDateTime now= LocalDateTime.now();
                        String strDate= dt.format(now);
                            
@@ -127,7 +127,7 @@ public class Main {
                        data.registerBorrow(array);
                        
                        System.out.println("Press 0 to go back to main menu");
-                        input =  Integer.parseInt(sc.nextLine());
+                       input =  Integer.parseInt(sc.nextLine());
                        break;
                   case 10:
                        System.out.println("Type the ID user:");
@@ -135,9 +135,9 @@ public class Main {
                        System.out.println("Type the name of the book:");
                        String bookName= sc.nextLine();
                             
-                       DateTimeFormatter date = DateTimeFormatter.ofPattern("dd/mm/yyyy hh:mm:ss");
-                       LocalDateTime dateNow= LocalDateTime.now();
-                       String dateF= date.format(dateNow);
+                       DateTimeFormatter date = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+                       LocalDateTime currentDate= LocalDateTime.now();
+                       String dateF= date.format(currentDate);
                            
                        String[] returnArray = {idReader, bookName, dateF};
                        data.registerReturn(returnArray);
